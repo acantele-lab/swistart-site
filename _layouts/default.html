@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ page.title | default: "Swistart Sagl" }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; max-width: 860px; margin: 40px auto; padding: 0 16px; line-height: 1.6; }
+    nav { margin: 16px 0; }
+    nav a { margin-right: 12px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  {% include nav.html %}
+  {{ content }}
+</body>
+</html>
