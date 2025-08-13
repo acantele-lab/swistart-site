@@ -1,0 +1,7 @@
+:root { --maxw: 860px; --pad: 16px; --font: system-ui, Arial, sans-serif; }
+* { box-sizing: border-box; }
+body { font-family: var(--font); max-width: var(--maxw); margin: 40px auto; padding: 0 var(--pad); line-height: 1.6; }
+nav { margin: 16px 0; }
+nav a { margin-right: 12px; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+footer { margin: 32px 0; font-size: 0.9rem; color: #666; }
