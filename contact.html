@@ -1,14 +1,31 @@
-<!doctype html><meta charset="utf-8">
-<title>Contact – Swistart Sagl</title>
-<body style="font-family:system-ui,Arial,sans-serif;max-width:860px;margin:40px auto;padding:0 16px;line-height:1.6">
+---
+layout: default
+title: Contact
+---
 <h1>Contact</h1>
+
 <p><strong>Company:</strong> Swistart Sagl</p>
 <p><strong>Address:</strong> Switzerland</p>
 
 <iframe
   src="https://tbwl.fillout.com/t/6XsGHbv13Sus"
-  width="100%" height="700" frameborder="0" style="border:0">
+  width="100%"
+  height="700"
+  frameborder="0"
+  style="border:0"
+  loading="lazy"
+  referrerpolicy="no-referrer">
 </iframe>
 
-
-</body>
+<p>If the form does not load, click to reveal our email.</p>
+<button id="reveal">Show email</button> <span id="addr"></span>
+<script>
+  const e = atob('aW5mb0Bzd2lzdGFydC5jaA=='); // info@swistart.ch
+  document.getElementById('reveal').addEventListener('click', () => {
+    const a = document.createElement('a');
+    a.href = 'mailto:' + e;
+    a.textContent = e;
+    document.getElementById('addr').appendChild(a);
+    document.getElementById('reveal').remove();
+  });
+</script>
